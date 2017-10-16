@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_name: MyText
+  date_of_flag: MyText
+  transaction_amount: MyText
+  notes: MyText
+  customer_id_number: MyText
+  open_or_closed: MyText
+
+two:
+  customer_name: MyText
+  date_of_flag: MyText
+  transaction_amount: MyText
+  notes: MyText
+  customer_id_number: MyText
+  open_or_closed: MyText
