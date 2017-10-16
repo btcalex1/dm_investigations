@@ -1,0 +1,35 @@
+<h1>Listing investigates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customer name</th>
+      <th>Date of flag</th>
+      <th>Transaction amount</th>
+      <th>Notes</th>
+      <th>Customer id number</th>
+      <th>Open or closed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @investigates.each do |investigate| %>
+      <tr>
+        <td><%= investigate.customer_name %></td>
+        <td><%= investigate.date_of_flag %></td>
+        <td><%= investigate.transaction_amount %></td>
+        <td><%= investigate.notes %></td>
+        <td><%= investigate.customer_id_number %></td>
+        <td><%= investigate.open_or_closed %></td>
+        <td><%= link_to 'Show', investigate %></td>
+        <td><%= link_to 'Edit', edit_investigate_path(investigate) %></td>
+        <td><%= link_to 'Destroy', investigate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Investigate', new_investigate_path %>
